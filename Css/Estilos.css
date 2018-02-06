@@ -1,0 +1,47 @@
+/*Posicionar siempr el footer abajo y que se adapte al contenido*/
+
+html
+{
+    position: relative; 
+    min-height: 100%;
+}
+
+body
+{
+    margin: 0 0 65px;
+}
+
+footer
+{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 65px;
+}
+
+/*fin footer*/
+
+article{
+	margin-top: 10px;
+}
+
+aside{
+	
+	border-left: 2px solid #C3CBCF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header{
+	background: #3E758C;
+	
+	color: white;
+	padding:15px 0 ;
+}
+
+footer{
+	background: #3E758C;
+	color: white;
+	padding:15px 0 ;
+	text-align: center;
+}
