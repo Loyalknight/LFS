@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="Css/morris.css">
 	<link rel="stylesheet" href="Css/bootstrap.min.css">
 	<link rel="stylesheet" href="Css/Estilos.css">
+	<link rel="stylesheet" href="Css/jquery.toast.css">
 </head>
 
 <body>
@@ -20,26 +21,23 @@
 
 	<div class="container-fluid">
 		<section class="row">
-			<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-				<div id="myfirstchart"></div>
+			<article class="grafi col-xs-12 col-sm-8 col-md-9 col-lg-9" id="grafica" >
 			</article>
 
 			<aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
 
 				<h4>Graphic options</h4>	
 				<hr>
-				<button class="btn btn-outline-primary btn-md btn-block ">Frequency vs distance (v)</button>
-				<button class="btn btn-outline-primary btn-md btn-block ">Frequency (v) vs distance</button>
+				<button class="btn btn-outline-primary btn-md btn-block active" >Frequency vs distance (v)</button>
+				<button class="btn btn-outline-primary btn-md btn-block " >Frequency (v) vs distance</button>
 				<button class="btn btn-outline-primary btn-md btn-block ">2 Frequency vs distance (v)</button>	
 				<hr>
 
-				<div>
-					<form >
-
+				<div id="formulario">
 						  <div class="form-row">	
 						  	<div class="form-group col-md-6">
 						      <label>Frequency</label>
-						      <input type="number" class="form-control" id="F" placeholder="Frequency">
+						      <input type="number" class="form-control" id="F" placeholder="Frequency" >
 						    </div>
 						    <div class="form-group col-md-6">
 						    	<label>Unit</label>
@@ -58,9 +56,8 @@
 						    <input type="number" class="form-control" id="FD" placeholder="Final dintance (km)">
 						  </div>
 
-					  <button class="btn btn-primary" id="Plot">PLot</button>
+					  <button class="btn btn-primary"  id="Plot">PLot</button>
 
-					</form>
 				</div>
 
 			</aside>
@@ -74,6 +71,7 @@
 	</footer>
 
 	<script src="Js/Jquery.js"></script>
+	<script src="Js/jquery.toast.js"></script>
 	<script src="Js/raphael.min.js"></script>
 	<script src="Js/bootstrap.min.js"></script>
 	<script src="Js/Graficar.js"></script>
