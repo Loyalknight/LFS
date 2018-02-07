@@ -37,12 +37,12 @@
 
 						  <div class="form-row">	
 						  	<div class="form-group col-md-6">
-						      <label >Frequency</label>
-						      <input type="email" class="form-control" id="inputEmail4" placeholder="Frequency">
+						      <label>Frequency</label>
+						      <input type="number" class="form-control" id="F" placeholder="Frequency">
 						    </div>
 						    <div class="form-group col-md-6">
 						    	<label>Unit</label>
-						      <select id="inputState" class="form-control">
+						      <select id="U" class="form-control">
 						        <option selected>GHz</option>
 						        <option>MHz</option>
 						      </select>
@@ -50,14 +50,14 @@
 						  </div>
 
 						   <div class="form-group">
-						    <label for="inputAddress">Distance</label>
-						    <input type="text" class="form-control" id="inputAddress" placeholder="Initial distance (km)">
+						    <label>Distance</label>
+						    <input type="number" class="form-control" id="ID" placeholder="Initial distance (km)">
 						  </div>
 						  <div class="form-group">
-						    <input type="text" class="form-control" id="inputAddress2" placeholder="Final dintance (km)">
+						    <input type="number" class="form-control" id="FD" placeholder="Final dintance (km)">
 						  </div>
 
-					  <button type="submit" class="btn btn-primary ">PLot</button>
+					  <button class="btn btn-primary" id="Plot">PLot</button>
 
 					</form>
 				</div>
@@ -74,5 +74,6 @@
 
 	<script src="Js/Jquery.js"></script>
 	<script src="Js/bootstrap.min.js"></script>
+	<script src="Js/Graficar.js"></script>
 </body>
 </html>
