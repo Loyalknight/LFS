@@ -34,7 +34,6 @@ aside{
 
 header{
 	background: #3E758C;
-	
 	color: white;
 	padding:15px 0 ;
 }
@@ -46,6 +45,15 @@ footer{
 	text-align: center;
 }
 
+a:link{
+	color: white;
+	text-decoration: none;	
+}
+
+a:hover{ 
+color:#C1F0F9; 
+} 
+
 .grafi{
-		padding:45px 0 ;
+		padding:50px 0 ;
 }

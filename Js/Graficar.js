@@ -68,7 +68,7 @@ function validar(){
 		})
         return false;
     }else{
-	capturarDatos();
+		capturarDatos();
     }
 
 }
@@ -89,15 +89,10 @@ function capturarDatos() {
 	var n = unidad.localeCompare("GHz");
 	var frecuenciaLog= 20*Math.log10(frecuencia);
 
-	if(n==0){
-		var info= [{ year: valorinicial, value: constanteKmGHz+(20*Math.log10(valorinicial))+frecuenciaLog }]; 
-	}else{
-		var info= [{ year: valorinicial, value: constantekmMHz+(20*Math.log10(valorinicial))+frecuenciaLog }]; 
-	}
-	
+	var info =[];
 	
 
-	for (var i = valorinicial+1; i <=valorfinal; i++) {
+	for (var i = valorinicial; i <=valorfinal; i++) {
 		if(n==0){
 			info.push({
 			"year": i +'Km',
